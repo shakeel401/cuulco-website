@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Case Studies - CuulCo</title>
+
+  <!-- Navbar styles -->
+  <link rel="stylesheet" href="navbar.css">
+
+  <!-- Page-specific styles -->
+  <link rel="stylesheet" href="caseStudies.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <nav>
+      <div class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="caseStudies.html" class="active">Case Studies</a></li>
+        <li><a href="#">Cuulpipe</a></li>
+        <li><a href="#">CuulArt</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Application</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <section class="case-studies-grid">
+      
+      <!-- Row 1 -->
+      <article class="case-item">
+        <img src="images/1 CuulCo Research.jpg" alt="CuulCo Research Comparisons">
+        <p class="caption">CuulCo Research Comparisons</p>
+      </article>
+      <article class="case-item">
+        <img src="images/2 Cannabis Tobacco Study.jpg" alt="Comparisons Cannabis Tobacco">
+        <p class="caption">Comparisons Cannabis Tobacco</p>
+      </article>
+      <article class="case-item">
+        <img src="images/6 Second-Hand smoke.jpg" alt="Second-Hand Smoke">
+        <p class="caption">Second-Hand Smoke</p>
+      </article>
+
+      <!-- Row 2 -->
+      <article class="case-item">
+        <img src="images/pitch1.jpg" alt="Pitch Deck Page 1">
+        <p class="caption">Pitch Deck Page 1</p>
+      </article>
+      <article class="case-item">
+        <img src="images/pitch2.jpg" alt="Pitch Deck Page 2">
+        <p class="caption">Pitch Deck Page 2</p>
+      </article>
+      <article class="case-item">
+        <img src="images/pitch3.jpg" alt="Pitch Deck Page 3">
+        <p class="caption">Pitch Deck Page 3</p>
+      </article>
+
+      <!-- Row 3 -->
+      <article class="case-item">
+        <img src="images/3 Vaping Safe Page 1.jpg" alt="Is Vaping Safe Page 1">
+        <p class="caption">Is Vaping Safe Page 1</p>
+      </article>
+      <article class="case-item">
+        <img src="images/4 Vaping Safe Page 2.jpg" alt="Is Vaping Safe Page 2">
+        <p class="caption">Is Vaping Safe Page 2</p>
+      </article>
+      <article class="case-item">
+        <img src="images/7 Second-hand graph.jpg" alt="Second-Hand Smoke Graph">
+        <p class="caption">Second-Hand Smoke Graph</p>
+      </article>
+
+    </section>
+  </main>
+
+  <!-- Script -->
+  <script>
+    const toggle = document.getElementById("menu-toggle");
+    const navLinks = document.querySelector("nav ul");
+
+    toggle.addEventListener("click", () => {
+      toggle.classList.toggle("active");
+      navLinks.classList.toggle("active");
+    });
+
+    document.querySelectorAll("nav ul li a").forEach(link => {
+      link.addEventListener("click", () => {
+        navLinks.classList.remove("active");
+        toggle.classList.remove("active");
+      });
+    });
+  </script>
+
+</body>
+</html>

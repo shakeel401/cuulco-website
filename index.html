@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CuulCo - Lung Health</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="caseStudies.html">Case Studies</a></li>
+        <li><a href="#">Cuulpipe</a></li>
+        <li><a href="#">CuulArt</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Application</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <div class="hero-left">
+          <div class="logo">CUULCO<sup>®</sup></div>
+          <img src="polar-bear.jpg" alt="Cool Bear Logo">
+        </div>
+
+        <p class="tagline">“Smoking Was Never This Cool”</p> <!-- 👈 moved inside grid -->
+
+        <div class="hero-right">
+          <img src="pipe-diagram.jpg" alt="CuulCo Pipe Diagram">
+        </div>
+      </div>
+
+      <h1>LungHealth - What’s In Your Smoke?</h1>
+      <h2>Researching the Science of Smooth since 2016</h2>
+    </section>
+
+
+
+
+
+    <section class="content">
+      <h3>Official position concerning smoking marijuana from Government Agencies, Health Institutions and Professionals</h3>
+
+      <p>
+        The CDC's position is that smoking marijuana is unsafe and carries negative health consequences, even if it's legal in
+        some states for adult use. Smoked cannabis damages lung tissue, increases the risk of cancer, and impair brain function, especially for young people.
+        <br><strong>The Centers for Disease Control and Prevention (CDC).</strong>
+      </p>
+
+      <p>
+        NIDA's position is that smoking marijuana has negative health effects, including potential harm to the lungs, brain, and
+        immune system, and can lead to addiction. The institute emphasizes the potentialfor adverse short and long-term
+        consequences from regular marijuana use, particularly during adolescent development, and advocates for continued
+        scientific research into its effects and policies surrounding it.
+        <br><strong>The National Institute on Drug Abuse (NIDA).</strong>
+      </p>
+
+      <p>
+        The ALA cautions the public against smoking marijuana because it contains the same toxins and carcinogens found in
+        tobacco smoke and can cause lung damage, including inflammation, scarring, and increased risks of chronic bronchitis.
+        <br><strong>The American Lung Association (ALA).</strong>
+      </p>
+
+      <p>
+        The (HHS) Department recommended rescheduling marijuana to a Schedule III Controlled Substance in August 2023,
+        recognizing its potential medical uses and lower public health risk compared to other Schedule I Drugs. The U.S.
+        <br><strong>Department of Health and Human Services (HHS).</strong>
+      </p>
+
+      <p>
+        RCPE published: There is an emerging concern among many respiratory physicians who would suggest that
+        habitual smoking of cannabis may contribute to the development of chronic obstructive pulmonary disease,
+        respiratory infections and higher risks of lung cancer
+        <br><strong>Royal College of Physicians of Edinburgh.</strong>
+      </p>
+
+      <p>
+        Smoking marijuana may do more damage to lungs than cigarettes, a new study suggests. The study, published in
+        the Journal Radiology, found marijuana may be linked to an increased risk of emphysema over smoking tobacco
+        alone. Emphysema is a condition where the lungs’ air sacs (Alveoli) are damaged until they eventually rupture,
+        It can cause a long-term cough, shortness of breath and wheezing, and it's irreversible once it develops.
+        <br><strong>Mayo Clinic – Private American Academic Medical Center.</strong>
+      </p>
+
+      <blockquote>
+        “A burning leaf is a burning leaf ... the lung doesn’t know the difference if it’s tobacco or marijuana.”
+        Dr. David Kaminsky, a pulmonologist and professor of medicine at the University of Vermont
+      </blockquote>
+
+      <p>
+        The American Lung Association advocates smoke is harmful to lung health and that marijuana “has been shown to
+        contain many of the same toxins, irritants and carcinogens as tobacco smoke.” While other experts agree, they also
+        argue inhalation offers the most efficient means to benefit from the drug. Inhaling cannabis triggers chemicals that
+        can quickly relieve pain, nausea and severe autism episodes among children. What is needed is a safer smoking pipe.
+        <br><strong>Dr. Jordan Tishler, Harvard Medical School and President of the Association of Cannabinoid Specialists.</strong>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>(c) 2025 David Bauer - All Rights Reserved - Copyright protected by U.S. Library of Congress</p>
+  </footer>
+
+  <!-- Toggle Menu Script -->
+  <script>
+  const toggle = document.getElementById("menu-toggle");
+  const navLinks = document.querySelector("nav ul");
+
+  toggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+    toggle.classList.toggle("active"); // 🔥 this animates into X
+  });
+</script>
+</body>
+</html>
