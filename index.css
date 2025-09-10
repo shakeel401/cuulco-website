@@ -1,11 +1,15 @@
+/* ========================= */
 /* Reset */
+/* ========================= */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* ========================= */
 /* Body */
+/* ========================= */
 body {
   font-family: Arial, sans-serif;
   color: #222;
@@ -16,12 +20,13 @@ body {
   padding: 0 15px;
 }
 
+/* ========================= */
 /* Navigation */
+/* ========================= */
 header {
   border-bottom: 1px solid #ddd;
   position: relative;
 }
-
 nav {
   display: flex;
   justify-content: center;
@@ -55,7 +60,9 @@ nav ul li a:hover {
   color: #005999;
 }
 
+/* ========================= */
 /* Hamburger Menu (Mobile) */
+/* ========================= */
 .menu-toggle {
   display: none; /* only show on mobile */
   flex-direction: column;
@@ -84,11 +91,9 @@ nav ul li a:hover {
 .menu-toggle.active span:nth-child(1) {
   transform: rotate(45deg) translate(5px, 5px);
 }
-
 .menu-toggle.active span:nth-child(2) {
   opacity: 0; /* hide middle line */
 }
-
 .menu-toggle.active span:nth-child(3) {
   transform: rotate(-45deg) translate(6px, -6px);
 }
@@ -121,7 +126,9 @@ nav ul li a:hover {
   }
 }
 
+/* ========================= */
 /* Hero Section */
+/* ========================= */
 .hero {
   margin: 10px 0 20px 0;
 }
@@ -141,25 +148,32 @@ nav ul li a:hover {
   margin-top: -20px;
 }
 
-.logo {
-  font-size: 64px;
-  font-weight: bold;
-  letter-spacing: 18px;
+/* Cuul.Co Logos */
+.logo-img {
+  max-width: 480px; /* bigger on desktop */
   margin-bottom: 10px;
-  text-align: left;
+  border: none; /* remove border */
 }
 
+/* Polar bear */
 .hero-left img {
-  max-width: 240px;
-  border: 2px solid #000;
+  max-width: 260px;
+  border: none; /* removed */
 }
 
+/* Tagline (Cool Smoke Logos Blu.jpg) */
 .tagline {
-  font-size: 22px;
-  font-style: italic;
-  color: #0072c6;
-  text-align: center;
-  margin-top: 170px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.tagline img {
+  max-width: 400px; /* bigger */
+  height: auto;
+  display: block;
+  margin-top: 220px; /* pushed down */
 }
 
 .hero-right {
@@ -168,7 +182,7 @@ nav ul li a:hover {
 }
 
 .hero-right img {
-  max-width: 280px;
+  max-width: 320px;
 }
 
 .hero h1 {
@@ -183,7 +197,15 @@ nav ul li a:hover {
   text-align: left;
 }
 
+.hero p {
+  font-size: 16px;
+  color: #333;
+  margin-top: 5px;
+}
+
+/* ========================= */
 /* Content Section */
+/* ========================= */
 .content {
   margin: 30px 0;
 }
@@ -208,7 +230,9 @@ blockquote {
   color: #444;
 }
 
+/* ========================= */
 /* Footer */
+/* ========================= */
 footer {
   text-align: center;
   font-size: 13px;
@@ -229,83 +253,69 @@ footer {
     text-align: center;
   }
 
-  .logo {
-    font-size: 50px;
-    letter-spacing: 12px;
-    text-align: center;
+  .logo-img {
+    max-width: 360px; /* bigger for medium */
+    margin: 0 auto 10px;
   }
+
   .hero-left img {
-    max-width: 340px;
+    max-width: 220px;
   }
 
   .hero-right img {
     max-width: 240px;
   }
 
-  .tagline {
-    font-size: 20px;
-    margin-top: 100px;
+  .tagline img {
+    max-width: 250px;
+    margin-top: 150px;
   }
 
   .hero h1,
-  .hero h2 {
+  .hero h2,
+  .hero p {
     text-align: center;
   }
 }
 
 /* Small screens (<= 768px) */
-/* Small screens (mobile <= 768px) */
 @media (max-width: 768px) {
-  .menu-toggle {
-    display: flex;
-  }
-
-  nav ul li {
-    margin: 10px 0;
-    text-align: center;
-  }
-
-  .logo {
-    font-size: 40px;
-    letter-spacing: 6px;
-    margin-top: 10px;
-    text-align: left;
-  }
-
-  .tagline {
-    font-size: 18px;
-    text-align: left;
-    margin: 20px 0;
-  }
-
   .hero-content {
     flex-direction: column;
     display: flex;
-    align-items: center;   /* center images on mobile */
+    align-items: center;
     text-align: center;
+  }
+
+  .logo-img {
+    max-width: 200px;
   }
 
   .hero-left img,
   .hero-right img {
-    width: 100%;       
-    max-width: none;   /* ✅ override 240px/280px cap */
-    height: auto;
-    display: block;
-    margin: 10px 0;
-    border: none;      /* optional: remove border on mobile */
-  }
-
-  .hero-left,
-  .hero-right {
-    align-items: center;
     width: 100%;
-    justify-content: center;
+    max-width: none; /* remove cap */
+    height: auto;
+    border: none;
+    margin: 10px 0;
   }
 
-  .hero h1,
+  .tagline img {
+    width: 100%;
+    max-width: 220px;
+    margin: 15px 0;
+  }
+
+  .hero h1 {
+    font-size: 20px;
+  }
+
   .hero h2 {
-    text-align: center;
     font-size: 16px;
+  }
+
+  .hero p {
+    font-size: 14px;
   }
 
   .content h3 {
