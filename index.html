@@ -4,9 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CuulCo - Lung Health</title>
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
   <link rel="stylesheet" href="index.css">
+  <style>
+    .footer-note {
+      color: red;
+      font-weight: bold;
+      margin-top: 10px;
+      font-size: 14px;
+    }
+  </style>
 </head>
 <body>
+  <!-- Navigation -->
   <header>
     <nav>
       <div class="menu-toggle" id="menu-toggle">
@@ -17,37 +28,40 @@
       <ul>
         <li><a href="index.html" class="active">Home</a></li>
         <li><a href="caseStudies.html">Case Studies</a></li>
-        <li><a href="#">Cuulpipe</a></li>
-        <li><a href="#">CuulArt</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Application</a></li>
+        <li><a href="cuulpipe.html">Cuulpipe</a></li>
+        <li><a href="about_us.html">About Us</a></li>
       </ul>
     </nav>
   </header>
 
+  <!-- Hero Section -->
   <main>
     <section class="hero">
       <div class="hero-content">
+        <!-- Left side logo + bear -->
         <div class="hero-left">
-          <div class="logo">CUULCO<sup>®</sup></div>
-          <img src="polar-bear.jpg" alt="Cool Bear Logo">
+          <img src="images/Cuul.Co Logos.jpg" alt="CuulCo Logo" class="logo-img">
+          <img src="images/polar-bear.jpg" alt="Cool Bear Logo">
         </div>
 
-        <p class="tagline">“Smoking Was Never This Cool”</p> <!-- 👈 moved inside grid -->
+        <!-- Tagline -->
+        <div class="tagline">
+          <img src="images/Cool Smoke Logos Blu.jpg" alt="Smoking Was Never This Cool">
+        </div>
 
+        <!-- Right side pipe diagram -->
         <div class="hero-right">
-          <img src="pipe-diagram.jpg" alt="CuulCo Pipe Diagram">
+          <img src="images/pipe-diagram.jpg" alt="CuulCo Pipe Diagram">
         </div>
       </div>
 
+      <!-- Updated headings -->
       <h1>LungHealth - What’s In Your Smoke?</h1>
-      <h2>Researching the Science of Smooth since 2016</h2>
+      <h2>2016 Cool Company LLC began researching The Science of Smooth</h2>
+      <p>We learned about the Science of Burning Organics and we patented a technology to protect Lung Health.</p>
     </section>
 
-
-
-
-
+    <!-- Content Section -->
     <section class="content">
       <h3>Official position concerning smoking marijuana from Government Agencies, Health Institutions and Professionals</h3>
 
@@ -93,8 +107,8 @@
       </p>
 
       <blockquote>
-        “A burning leaf is a burning leaf ... the lung doesn’t know the difference if it’s tobacco or marijuana.”
-        Dr. David Kaminsky, a pulmonologist and professor of medicine at the University of Vermont
+        “A burning leaf is a burning leaf ... the lung doesn’t know the difference if it’s tobacco or marijuana.”  
+        <br>— Dr. David Kaminsky, a pulmonologist and professor of medicine at the University of Vermont
       </blockquote>
 
       <p>
@@ -107,19 +121,23 @@
     </section>
   </main>
 
+  <!-- Footer -->
   <footer>
     <p>(c) 2025 David Bauer - All Rights Reserved - Copyright protected by U.S. Library of Congress</p>
+    <p class="footer-note">
+      The Cuulpipe was designed for Lung Cancer Patients to try Cannabis. It's now available to you.
+    </p>
   </footer>
 
   <!-- Toggle Menu Script -->
   <script>
-  const toggle = document.getElementById("menu-toggle");
-  const navLinks = document.querySelector("nav ul");
+    const toggle = document.getElementById("menu-toggle");
+    const navLinks = document.querySelector("nav ul");
 
-  toggle.addEventListener("click", () => {
-    navLinks.classList.toggle("active");
-    toggle.classList.toggle("active"); // 🔥 this animates into X
-  });
-</script>
+    toggle.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+      toggle.classList.toggle("active"); // animate hamburger → X
+    });
+  </script>
 </body>
 </html>
