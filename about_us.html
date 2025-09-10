@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - CuulCo</title>
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="about_us.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav>
+      <div class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="caseStudies.html">Case Studies</a></li>
+        <li><a href="cuulpipe.html">Cuulpipe</a></li>
+        <li><a href="about_us.html"class="active">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Top collage -->
+  <section class="collage-section">
+    <img src="images/collage.jpg" alt="Collage" class="full-image">
+  </section>
+
+  <!-- Store image -->
+  <section class="store-section">
+    <img src="images/store.jpg" alt="CuulCo Store" class="full-image">
+  </section>
+
+  <!-- Domains list -->
+  <section class="domains-section">
+    <img src="images/domains.jpg" alt="CuulCo Domains" class="full-image">
+  </section>
+
+  <!-- Bottom row (QR + Products image) -->
+  <section class="bottom-section">
+    <div class="qr-contact">
+      <img src="images/qr_contact.jpg" alt="QR Code and Contact">
+      <div class="qr-text">
+        <p><a href="http://www.CuulFranchise.com">www.CuulFranchise.com</a></p>
+        <p>David Bauer Founder Director<br>+1 3143941500 Dave@Cuul.Co</p>
+      </div>
+    </div>
+    <div class="products">
+      <img src="images/products.jpg" alt="Product Lines">
+      <h3>Current Product Lines</h3>
+    </div>
+  </section>
+  <script>
+    const toggle = document.getElementById("menu-toggle");
+    const navLinks = document.querySelector("nav ul");
+
+    toggle.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+      toggle.classList.toggle("active"); // animate hamburger → X
+    });
+  </script>
+</body>
+</html>

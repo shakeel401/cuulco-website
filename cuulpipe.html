@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CuulPipe - CuulCo</title>
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="cuulpipe.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav>
+      <div class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="caseStudies.html">Case Studies</a></li>
+        <li><a href="cuulpipe.html" class="active">Cuulpipe</a></li>
+        <li><a href="about_us.html">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Top Section -->
+  <section class="top-section">
+    <div class="video-links">
+      <div>
+        <p>Technology Video</p>
+        <a href="http://www.CuulCo.com">www.CuulCo.com</a>
+      </div>
+      <div>
+        <p>Testimonial Video<br>Opioid Addiction</p>
+        <a href="http://www.Cuulcare.com">www.Cuulcare.com</a>
+      </div>
+      <div>
+        <p>Testimonial Video<br>Lung Cancer Patient</p>
+        <a href="http://www.CuulLungs.com">www.CuulLungs.com</a>
+      </div>
+      <div>
+        <p>Testimonial Video<br>Covid Patient</p>
+        <a href="http://www.CuulVid.com">www.CuulVid.com</a>
+      </div>
+      <div>
+        <p>Cooling Demonstration</p>
+        <a href="http://www.CuulDemo.com">www.CuulDemo.com</a>
+      </div>
+    </div>
+
+    <div class="top-images">
+      <div class="image-grid">
+        <img src="images/A Fuul Kit.jpg" alt="CuulPipe Set">
+        <img src="images/top-middle.jpg" alt="CuulPipes">
+        <img src="images/top-right.jpg" alt="Cooling Demonstration">
+      </div>
+      <div class="image-row">
+        <img src="images/two-pipe.jpg" alt="CuulPipe Two Pipes">
+        <img src="images/instructions.jpg" alt="CuulPipe Instructions and Contact">
+      </div>
+    </div>
+  </section>
+
+  <!-- Article Section -->
+  <section class="article-section">
+    <div class="article-images">
+      <img src="images/Article Page 1.jpg" alt="Cool Company Article Page One">
+      <img src="images/Article Page 2.jpg" alt="Cool Company Article Page Two">
+    </div>
+  </section>
+
+  <!-- Future CuulPipes -->
+<section class="future-section">
+  <div class="future-pipes">
+    <img src="images/NFT Art.jpg" alt="Future CuulPipes Collection">
+  </div>
+</section>
+<script>
+    const toggle = document.getElementById("menu-toggle");
+    const navLinks = document.querySelector("nav ul");
+
+    toggle.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+      toggle.classList.toggle("active"); // animate hamburger → X
+    });
+  </script>
+</body>
+</html>
