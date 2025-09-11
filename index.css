@@ -150,8 +150,10 @@ nav ul li a:hover {
 
 /* Cuul.Co Logos */
 .logo-img {
-  max-width: 480px; /* bigger on desktop */
-  margin-bottom: 10px;
+  margin-top: 30px;
+  width: 600px;
+  max-width: 680px; /* bigger on desktop */
+  margin-bottom: 50px;
   border: none; /* remove border */
 }
 
@@ -173,7 +175,7 @@ nav ul li a:hover {
   max-width: 400px; /* bigger */
   height: auto;
   display: block;
-  margin-top: 220px; /* pushed down */
+  margin-top: 180px; /* pushed down */
 }
 
 .hero-right {
@@ -254,8 +256,11 @@ footer {
   }
 
   .logo-img {
-    max-width: 360px; /* bigger for medium */
+    width: 360px;
+    max-width: 560px; /* bigger for medium */
     margin: 0 auto 10px;
+    margin-top: 25px;
+    margin-bottom: 25px;
   }
 
   .hero-left img {
@@ -288,6 +293,7 @@ footer {
   }
 
   .logo-img {
+    margin-top: 30px;
     max-width: 200px;
   }
 
@@ -302,7 +308,7 @@ footer {
 
   .tagline img {
     width: 100%;
-    max-width: 220px;
+    max-width: 320px;
     margin: 15px 0;
   }
 
